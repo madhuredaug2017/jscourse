@@ -1,0 +1,23 @@
+1) null, undefined
+2) Object
+  a) get a value of a key
+  b) set a value of a key
+  c) delete a key from object
+3) Window Object
+4) Function Declaration
+
+/** Extra **/ 
+Additional or Tomorrow's Session
+5) Function Expressions
+   a) functions as first class objects
+    (assigned, passed around and called)
+6) Multiple Functions in a script
+7) Passing Functions
+
+/** Few More **/
+8) Named Function Expressions
+9) Logical Operators (&&, ||, !), !! --
+10) ternary operator (?) (ex: give the least number from the value passed)
+11) IIFE or Module
+12) scope
+13) this
