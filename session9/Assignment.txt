@@ -1,0 +1,10 @@
+write a function to do the following
+1) reverse a string
+2) check if passed string is palindrome
+3) find missing number in an array [1,3,4,5,6] --> should return 2
+4) find non-duplicate number in an array of duplicates [1,6,1,3,3,2,7,2,6] -->return 7
+5) replace all matches of "world" to "global", "This is a world population and this is world count".
+6) Get the first five elements of an array, > 5
+7) Remove the centre most element in an array ,
+8) Minimum value in an array
+9) Maximum value in an array
