@@ -1,0 +1,15 @@
+Javascript
+1) How to add javascript to the page
+2) DataTypes
+    Number
+    String
+    Boolean
+    Array
+    Date
+    Regexp
+
+    Function
+    Objects
+3) == vs ===
+4) typeof
+5) instanceof

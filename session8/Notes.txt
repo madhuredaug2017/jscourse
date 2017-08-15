@@ -1,0 +1,23 @@
+Javascript is the only programming language of the browser
+Brendon Eich -- very very simple --
+
+1)It is a loosely typed language
+ We dont have to type what data type the variable is
+
+ var num = 10;
+ var name  = 'john';
+
+ int num = 10;
+ num:int = 20;
+
+ // Data Types
+
+ Number
+ String
+ Boolean
+ Array
+ Date
+ Regexp
+        -- null and undefined  -- special values
+ functions and objects ()
+ functions are first class objects in javascript

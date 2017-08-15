@@ -1,0 +1,10 @@
+String mdn
+Number mdn
+Boolean mdn
+Array mdn
+
+git clone
+git add filename foldername .
+git commit -m "comment name"
+git push -u origin branch name
+git pull
