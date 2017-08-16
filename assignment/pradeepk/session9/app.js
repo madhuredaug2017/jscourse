@@ -10,11 +10,12 @@ console.log(strReverse);
 
 var str = 'mom';
 var strReverse = str.split('').reverse().join('');
-if(str==strReverse)
+if(str===strReverse){
     console.log("yes");
-else 
+}
+else{
     console.log("no");
-
+}
 //min
 
 //max
