@@ -1,0 +1,45 @@
+//they are moved to the top of the line of the file 
+//1) variables  (age,subtract)
+//2) function declarations sum
+//assignments memory to these two 
+//age and subtract -- undefined 
+//sum function sum(a,b){a,b }
+//
+
+
+
+//var 
+//Number,String,boolean, null,undefined, date, regexp,
+//object, function 
+
+//function expression 
+ 
+//sum(1,2); -->wrong 
+var sum = function(a,b){
+	return a + b;
+}
+
+sum(1,2);
+
+//functions are first class objects in javascript 
+
+ 
+
+ 
+var partialSum = function(){
+	return 5 + 10;
+}
+
+function sum(a,b){
+   return a + b;
+}
+
+// partialSum.toString = function(){
+// 	return 100;
+// }
+//4 + 100 -->104
+
+///'4'+ 'function(){ return 5 +10}'
+//feature + --Number 
+
+console.log(sum(4,partialSum));

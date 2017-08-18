@@ -1,0 +1,29 @@
+1) Write a function to get Symbol Name from the datastructure below?
+
+var stocks = [
+    {symbol: 'MSFT', value: '300'},
+    {symbol: 'GOOGLE', value: '600'},
+    {symbol: 'GOOGLE', value: '300'}
+    {symbol: 'APPLE', value: '700'}
+ 
+];
+
+function getSymbolName(stockName){
+	
+}
+
+getSymbolName('MSFT') --> 300
+getSymoblName('APPLE') --> 700
+getSymbolName('GOOGLE') -->600 //first Match
+
+//getLatestSymbolName(stockName) -> //latest 
+	getLatestSymbolName('GOOGLE') -->300 
+
+2) Delete index from an array
+example : data is [10,5,3,40,50]
+if delete 2nd index it should return [10,5,40,50]
+var arr = [10,5,3,40,50]
+function deleteNthIndex(2){
+	
+}
+[10,5,40,50]

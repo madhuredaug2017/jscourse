@@ -1,0 +1,31 @@
+--global 
+1) Named Function Expressions (fibonacci)
+2) Importance of Semi collection
+function foo1(){
+  return {
+      bar: "hello"
+  };
+}
+
+function foo(){
+var obj = {
+  bar : 'hello'
+};
+return obj;
+}
+
+function foo2(){
+
+  return//(automatic semicolon issue)
+  {
+      bar: "hello"
+  };
+}
+
+3) functions inside Objects
+4) for in
+5) this
+6) hasOwnProperty
+7) try catch
+8) Closure
+8) IIFE or Module
