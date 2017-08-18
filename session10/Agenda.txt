@@ -1,0 +1,14 @@
+Additional or Tomorrow's Session
+1) Function Expressions and Hoisting 
+    functions as first class objects
+    (assigned, passed around and called)
+2) Multiple Functions in a script
+3) Passing Functions
+
+/** Few More **/
+4) Named Function Expressions
+5) Logical Operators (&&, ||, !), !! --
+6) ternary operator (?) (ex: give the least number from the value passed)
+7) IIFE or Module
+8) scope
+9) this

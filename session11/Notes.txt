@@ -1,0 +1,43 @@
+function foo(){
+	//var total,bar -- function (return 8)
+	var total = 10;
+    //hoisited to the top of line of function 
+    function bar() {
+        return 3;
+    }
+    return bar();//8
+
+    function bar() {
+        return 8;
+    }
+
+}
+
+function sum(){
+
+	....
+	return;
+	
+	...
+}
+
+
+//global 
+
+var person = {
+    name : 'john',
+    age: 20
+}
+
+
+function getNewPerson(){
+    var person = {
+         name : 'peter',
+         age : 40
+    }
+    
+   console.log(person);
+   console.log(window.person); 
+}
+
+getNewPerson();
