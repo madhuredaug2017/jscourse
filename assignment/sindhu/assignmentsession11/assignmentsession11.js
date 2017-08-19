@@ -13,16 +13,3 @@ console.log(index);
 deleteNthIndex();
 console.log(arr);
 
-var stocks = [
-    {symbol: 'MSFT', value: '300'},
-    {symbol: 'GOOGLE', value: '600'},
-    {symbol: 'GOOGLE', value: '300'}
-  //  {symbol: 'APPLE', value: '700'}
- 
-];
-
-function getSymbolName(stockName){
-	
-}
-
-getSymbolName('MSFT');
