@@ -1,0 +1,9 @@
+1) Assignment
+2) Underscore  and also Unit Testing
+3) functions inside Objects
+4) for in
+5) this
+6) hasOwnProperty
+7) try catch
+8) Closure
+8) IIFE or Module

@@ -1,0 +1,36 @@
+1) Write a JavaScript function to convert temperatures to and from Celsius, Fahrenheit. 
+
+formulae: c/100 = (f-32)/180 [ where c = temperature in Celsius and f = temperature in Fahrenheit ] 
+
+Example :
+60°C is 140 °F
+45°F is 7.222222222222222°C 
+
+2) Write a function to create camelCase string from  the words  passed 
+	
+	Camel case means the first letter of the first word is small but the next word first letter is Capital 
+
+	Examples of Camel Case:
+
+	testJavascriptCode
+	camelCase
+	myFriendsName
+
+
+Example Input/Output
+
+     input = ['test','javascript','code'] 
+     output = 'testJavascriptCode';
+
+     ['TeST','jAvaScript', 'coDe']
+
+3) Write a function to calculate change with items cost and cash provided
+example:
+
+items = [1,6.5,5];
+cash = 20;
+//return 7.5
+function calculateChange(items,cash){
+	
+}
+
