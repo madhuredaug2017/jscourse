@@ -1,0 +1,18 @@
+1) Write a program which will find all such numbers 
+   which are divisible by 9 but are not a multiple of 5, between 600 and 1000
+   (both included).
+
+2) Write a program to sort the array (use in built sort, bonus if you can learn algorithms for the videos provided and try different sorts)
+   var  names = ['mary','abraham','david',bob'];
+   
+ //return // ['abraham','bob','david','mary']
+
+ //array sort 
+
+ //names.sort()
+
+ //ascdending or descending order 
+
+
+//lynda -- videos css 
+//
