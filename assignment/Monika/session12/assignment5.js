@@ -1,18 +1,18 @@
 // celsius to farenheit and farenheit to celsuis
 function ftoc(f)
 {
-return parsefloat((f-32)/1.8);
+return ((f-32)/1.8);
 }
 
-console.log(var Celsuis=ftoc(45));
+console.log(Celsuis=ftoc(45));
 
 
 function ctof(c)
 {
-return parsefloat(1.8*c)+32;
+return (1.8*c)+32;
 }
  
- console.log(var farenheit=ctof(60));
+ console.log(farenheit=ctof(60));
 
 
 //camel Case String
@@ -47,10 +47,10 @@ camelCase(['Camel' , 'caSe']);
 
 function calculateChange(items,cash){
 
-	var itemscost=items.reduce(function(prev,current))
+	var itemscost=items.reduce(function(prev,current)
 { 
 	return prev+current;
-}
+},0)
 	return cash-itemscost;
 }
 
