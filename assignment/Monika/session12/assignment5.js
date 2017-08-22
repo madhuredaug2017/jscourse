@@ -19,7 +19,7 @@ return (1.8*c)+32;
 	
 	function camelCase(arr)
 	{
-		for(i=0:i<arr.length;i++)
+		for(i=0;i<arr.length;i++)
 		{
 			var str=arr[i];
 			var result=function camelize(str) {
