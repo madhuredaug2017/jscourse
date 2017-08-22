@@ -1,0 +1,48 @@
+var sum = function(a,b){
+  return a + b;
+}
+
+//object in javascript inherits from base object called 'Object'
+//has some keyvalue pairs 
+
+var person = {
+	name : 'john',
+	age  : 20,
+	birthYear : function(){
+		return 1997;
+	}
+}
+//()-->executing a f
+//[] -->for loop to access it 
+// for(var i = 0; i < arr.length;i++){
+
+// }
+//{} --> .
+for(var key in person){
+ if(person.hasOwnProperty(key)){
+
+ }
+  if(typeof person[key] === 'function'){
+   console.log('key is '+ key + ' and its value is '+ person[key]());
+  }else{
+  	console.log('key is '+ key + ' and its value is '+ person[key]);
+  }
+  
+}
+
+//Key is name and its value is undefined 
+
+// for(var prop in person){
+
+// }
+//console.log( person.name + ' was born in ' +   person.birthYear());
+
+//any other datatype function is also a datatype 
+//functions as first class objects 
+//Number, Boolean, String, Objects , Arrays, Function
+//null, undefined 
+
+//Date, Regexp
+
+//[] --> for loop
+//{} ==> for in loop

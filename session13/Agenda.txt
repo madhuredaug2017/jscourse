@@ -1,0 +1,8 @@
+1) functions inside Objects
+2) for in
+3) this
+4) hasOwnProperty
+5) try catch
+6) Closure
+7) IIFE or Module
+
