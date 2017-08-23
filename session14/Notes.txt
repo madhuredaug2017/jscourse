@@ -1,0 +1,45 @@
+
+//new operator 
+
+//aka Class 
+//until es6 we donot have direct way of creating class 
+//or using Class keyword 
+
+//Class -- function 
+//Object -- new 
+
+//Class 
+
+//Cars 
+// projected model or design or prototype it 
+// paper -- draw and design
+//design phase -- no  physical material is used 
+ //drive the car (paper)
+
+// construction -- building -- by using real material we will be building it  
+ //touch (drive the car)
+ //BMW (sindhu, pradeep)
+ // two cars built  of the same type car (design)
+
+
+ //all products (human )
+
+ //software (object oriented programming)
+
+ //Class (we will write) --> analogous to the paper design of the physical product 
+
+//once we are ready
+
+//creating object(physical )--memory to this object 
+
+// black
+//red -->
+
+//Class (design)
+//instance of the Class (it is called object) 
+//it is independent of each other 
+
+//java
+
+//prototypal inheritance 
+//class 
