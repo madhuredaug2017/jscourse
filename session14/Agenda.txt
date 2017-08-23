@@ -1,0 +1,7 @@
+1) this
+2) try catch
+3) Closure
+4) IIFE or Module
+
+//object --> 
+//function declaration 
