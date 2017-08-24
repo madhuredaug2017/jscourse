@@ -1,0 +1,4 @@
+1) try catch
+2) Closure
+3) IIFE or Module
+4) timers 
