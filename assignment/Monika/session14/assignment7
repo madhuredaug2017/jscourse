@@ -1,0 +1,137 @@
+1) Difference between data types in Java script and other programming languages?
+In any programming language data types are declared with their type but in java script,it will interpret the type of date declared by itself rather than declaring manually.
+EX for Java: var int num=20; //so the number is an integer
+                      Var string name=”Chinna”// so the name is a string (group of characters) 
+EX for Java Script: var num=20; // Java script will find itself that it is a integer 
+
+
+
+
+
+
+2) What is ‘this’ keyword in Java Script? What are the different ways of its usage?
+‘This’ is a special keyword in a Java Script and can’t be defined as a variable. This is contextual.
+‘This’ can be used in four different ways:
+1) Inside a function in an object:
+‘This’ can be used inside a function in an object as the value of a key. 
+Ex: 
+var Pawankalyan=
+     {
+         Age: 46,
+         Movies: 24, 
+         Party: Janasena,
+         DOB: function () {
+                return (2017-this.Age);  } //1971
+     }
+
+Here this.Age refers to age. So, 2017-46 = 1971
+
+EX2:
+MaheshBabu.DOByear=Pawankalyan.DOB;
+
+Var MaheshBabu=
+     {
+         Age:43;     
+     }
+
+Maheshbabu.DOByear(); //1974
+
+
+
+2) Inside a function Declaration:
+‘This’ refers to global window object which means ‘this’ will refer a global variable. If a variable is declared inside a function then it will return NAN (not a number: This is a type of number).
+EX:
+Var age=43;
+function MaheshBabu()
+     {
+           return (2017-this.Age) ;  } // 1974
+     }
+MaheshBabu();
+As age is a global variable, MaheshBabu() or window.MaheshBabu() will be the same.
+
+EX2: Consider the same example with local variable
+function MaheshBabu()
+     {
+           Var age=43;
+
+           return (2017-this.Age) ;  } 
+     }
+ 
+MaheshBabu(); // will return undefined
+
+3) Using new Operator: 
+In this kind, ‘this’ is used as an instance
+Even though if a function doesn’t had a return statement, using new will return the value. By default without return statement, it will return undefined.
+EX:
+Function movie(nameofamovie,directorsname,heroname,heroinename)
+{
+    this.name=nameofamovie;
+    this.director=directorsname;
+    this.hero=heroname;
+    this.heroine=heroinename;
+
+  }
+Var spy=new movie(‘spyder’,’murugudas’,’Mahesh’,’rakul’);
+Console.log(spy.hero);//Mahesh
+
+So without new operator anything without return statement will return undefined. But using new will return the value and the variable spy is an object.
+
+
+4) Using Call and apply:
+The main difference between call and apply is when using call, all the parameters are given as arguments whereas in apply, all the parameters are given in an array and then will declare in argument.
+EX for call:
+var Pawankalyan=
+     {
+         Age: 46,
+         Movies: 24, 
+         Party: Janasena,
+         DOB: function (currentyear,firstmovie) {
+                return (currentyear-this.Age);  } //1971
+     }
+
+
+Var MaheshBabu=
+     {
+         Age:43;     
+     }
+
+Pawankalyan.DOB.call(MaheshBabu,2017,AMIA); //1974 -----------(1)
+
+One more thing to observe in this example is we are not assigning the keys/properties of an object to another object instead we are just using call operator.
+
+Ex for apply:
+For the same example, we can call as below
+Var info=[];
+Info.push(2017);
+Info.push(AMIA); //pushing parameters into an array
+Pawankalyan.DOB.apply(MaheshBabu,info);
+
+
+3) What is the difference between function declaration and function expression?
+Function declaration consists of function name, arguments, function definition whereas function expression usually contains arguments and function definition. Function expressions are stored in a variable. The main difference is function declarations can be hoisted but function expressions cannot be hoisted. Since the function expression is assigned to a variable, this variable will be hoisted but not the function expression.
+
+Also, function can be called anywhere like before and after the function declaration but for function expressions, function can be called only after the declaration.
+
+EX for functional declaration:
+Diff(55,20,4);//31 ---------will return 31 even though it is declared before function declaration
+Function Diff(a,b,c)
+{
+ Return a-b-c;
+}
+Diff(55,20,4);//31 
+
+Here, diff is a function name
+(a,b,c) – this are the arguments
+Diff(a,b,c) ---this is function call
+
+EX for functional expression:
+Var Diff=function (a,b,c)
+{
+Return a-b-c;
+}
+Diff(55,20,4);//31
+
+Here, the operation is same as function declaration except the structure of declaration. It is assigned to a variable with name. Here, function can be called using the variable name.
+
+
+
