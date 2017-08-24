@@ -1,0 +1,33 @@
+1) Write a function 'endsWith()' to test whether a string ends with a specified string, a) with out regular expression,
+
+b) Go through Regexp course in code school every day, while learning attempt this with a regexp;
+
+Example:
+var sen = "I am learning how to write code";
+endsWith(sen,'code'); --> return true
+endsWith(sen,'coding'); --> return false
+endsWith(sen,'write code'); --> return true 
+
+
+2) Write a function mergeRanges() that takes an array of meeting time ranges and returns an array of condensed ranges.
+for example:
+```
+  [
+    {startTime: 0,  endTime: 1},
+    {startTime: 3,  endTime: 5},
+    {startTime: 4,  endTime: 8},
+    {startTime: 10, endTime: 12},
+    {startTime: 9,  endTime: 10}
+]
+```
+
+would return
+
+```
+[
+    {startTime: 0, endTime: 1},
+    //free times
+    {startTime: 3, endTime: 8},
+    //free times
+    {startTime: 9, endTime: 12}
+]
