@@ -16,17 +16,24 @@ else
     console.log("Given string is not palindrome");
 }
 
-// find missing number in an array [1,3,4,5,6]
 
-function missingnumbers(array){
-Var sum=array.reduce(function(prev,curr){
-Return prev+curr;
-},0);
-Var n=array[array.length-1];
-Var SumofN=(n*(n=1)/2);
-Console.log(“missing number is”+ SumofN-sum);
-}
 
+// min value
+function min(arr){
+   var value=Math.min.apply(Math,arr);                            
+return value;      
+}                                                                                              
+    var result=min([6,4,3,8,5,10]); 
+console.log(result);
+
+
+//max value 
+function max(arr){
+   var value=Math.max.apply(Math,arr);                            
+return value;                                             
+ }  
+ var result=max([6,4,3,8,5,10]); 
+console.log(result);
 
 // replace all matches of "world" to "global", "This is a world population and this is world count".
 var rep = /world/gi;
@@ -36,27 +43,35 @@ console.log(result);
 
 
 //Getting first five elements
-var array = [5,10,15,20,25,30,35,40,45]; 
-array.slice(0,5);
+function firstfive(array)
+{
+	var fiveelem=array.slice(0,5);
+	return fiveelem;
+}
+var five=firstfive([5,10,15,20,25,30,35,40,45]);
+console.log(five);
 
 //Removing centermost element
-  var array = [4,6,8,10,12,14,16]; 
-delete Array[array.length/2]; 
+  function remcen(array)
+{
+	var result=array.splice(2,1);
+	return result;
+}
+var array=[1,2,3,4,5];
+var element=remcen(array);
 console.log(array);
+console.log("removed element is  "+ element);
 
-// min value
-function min(arr){
-   var value=math.min.apply(math,arr);                            
-return( value);      
-}                                                                                              
-    var result=min([6,4,3,8,5,10]); 
-console.log(result);
+                                                        
+    // find missing number in the given array [1,3,4,5,6]
 
+var a = [1,3,4,5,6]; 
+var b = [];
 
-//max value 
-function max(arr){
-   var value=math.max.apply(math,arr);                            
-return( value);                                             
- }                                                          
-    var result=max([6,4,3,8,5,10]); 
-console.log(result);
+for ( var i = 0; i < a.length; i++ ) {
+
+    if ( (a[i+1] - a[i]) > 1 ) {
+        b.push( a[i+1] - a[1] );   
+    }
+}
+console.log(b);
