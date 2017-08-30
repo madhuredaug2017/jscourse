@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.js"></script>
+
+</head>
+<body>
+
+  <script type="text/javascript" >
+  //jquery document ready 
+   $(document).ready(function(){
+     console.log('first: ' + $('.container').length );
+   });
+     
+
+  </script>
+  <div class="container">
+    This is first container
+  </div>
+
+  <script type="text/javascript" >
+
+  $(document).ready(function(){
+     console.log('second : ' + $('.container').length );
+   });
+     
+     
+  </script>
+    
+  <div class="container">
+    This is second container
+  </div>
+
+<script type="text/javascript" >
+    
+    $(document).ready(function(){
+     console.log('third: ' + $('.container').length );
+   });
+     
+  </script>
+
+  <div class="container">
+    This is third container
+  </div>
+
+  <script type="text/javascript" >
+  $(document).ready(function(){
+     console.log('fourth: ' + $('.container').length );
+   });
+     
+  </script>
+
+ 
+ <script type="text/javascript" src="basic.js"></script>
+
+</body>
+</html>
