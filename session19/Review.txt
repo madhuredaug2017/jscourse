@@ -1,0 +1,15 @@
+//jquery 
+append 
+
+new text or html to the parent 
+
+<div class="parent">
+	<h1>Welcome </h1>
+	
+</div>
+
+$('.parent').append('<h2>This is new h2 </h2>');
+
+ <!--- $('.container').addClass('newBox'); 
+        $('.container').eq(0)  jquery elemnet
+   -->
