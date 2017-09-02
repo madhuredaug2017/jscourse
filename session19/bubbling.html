@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO Application using Jquery</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
+	<style>
+		.parent{
+		  margin: 0 auto;
+		}
+
+		.parent{
+			background-color: red;
+			border: 1px solid green;
+			width: 200px;
+			height: 200px;
+			cursor: pointer;
+			padding-left: 50px;
+			padding-top: 50px;
+		}
+
+		.child{
+			background-color: yellow;
+			border: 1px solid blue;
+			width: 100px;
+			height: 100px;
+			cursor: pointer;
+			padding-left: 30px;
+			padding-top: 30px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+ <!-- attributes to html if you are attaching events Obstrusive js -->
+ 
+  <div class="parent">
+  	  <div class="child">
+  	  	<button class="grandChild" > Grand Child </button>
+  	  </div>
+  </div>
+  
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="bubbling.js"></script>
+
+</body>
+</html>

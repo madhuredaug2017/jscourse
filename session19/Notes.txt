@@ -1,0 +1,30 @@
+//eq vs get
+
+//
+     //$('.container').addClass('newBox');
+
+    // $('.container')[0];//first dom element 
+     //$('.container')[1]; 
+     //.get()--> jquery element to dom element
+
+     $('.container').eq(0) //--> jquery element at the index of that 
+     //matching selector 
+     var $el = $('.container').eq(0);
+     var el = $('.container').get(0);//[0]
+     $el.addClass()
+     //el.addClass
+     //classlist 
+
+    $($('.container').get(0))
+
+
+     var el = $('.container').get(0);
+	 $(el) // jquery element 
+
+
+	 // $('.task').click(onTaskClicked);
+     // $('.task').length //0
+     // $('#taskContainer').append(newTaskElement);
+
+       // $('.task').click(onTaskClicked);
+      //$('.task').length //1 
