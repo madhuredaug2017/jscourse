@@ -1,0 +1,8 @@
+http methods 
+
+1) get (in the browser url)
+2) post 
+
+
+-------------
+postman 
