@@ -1,0 +1,15 @@
+WEB Service API 
+
+-----Get --------------------------------
+1)Getting Customers (/customers/)
+   http://localhost:8100/customers/
+
+2)Getting Actors 
+   http://localhost:8100/actors/
+
+
+3) Getting Messages 
+ 	 http://localhost:8100/messages/
+
+4) Getting Tasks 
+    http://localhost:8100/tasks/

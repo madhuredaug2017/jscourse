@@ -1,0 +1,9 @@
+1)Assignment
+
+Display actors by calling actors end point 
+
+with images on the left side (Card Style)
+
+on the right side display Full Name and age 
+
+//list of cards 

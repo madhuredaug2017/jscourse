@@ -1,0 +1,4 @@
+1) go to package.json folder in command line 
+  (commander)
+2)npm install [(maven in java)(pip inpython)]
+3) npm start (start the server)
