@@ -1,0 +1,11 @@
+//1)Read Event MDN
+//2) event.currentTarget vs event.target
+//3) event.stopPropogation vs event.stopImmediatePropogation
+//4) create a button and add event listener to it (event registration) in which
+// if the button is clicked, the button position should move 10px down.
+//5)do image slide show
+
+var images = ['image1.jpg','image2.jpg','image3.jpg'];
+var baseUrl = 'images/';
+//<img src="images/image1.jpg" /> one image element
+//bonus is cyclic behavior 

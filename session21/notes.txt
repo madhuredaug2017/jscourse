@@ -1,0 +1,127 @@
+browser javascript 
+
+it cannot directly talk to database  
+//database application 
+     //Relational Databases 
+     //MySQL
+     //Oracle
+     //Microsoft SQL Server
+
+
+     --//tables 
+     //customer , product, employee 
+     //sql language queries on the relational databases 
+
+
+     //NoSQL Databases (not Relational Databases)
+     //Mongodb
+     //Elastic Search
+
+
+//db with tables 
+// security
+//javascript is public 
+//credentails 
+//username // javascript 
+//variable //
+
+//pre 2005 
+
+html with some data ---
+call a server side function(service)-->end point 
+
+// server(java) -- db protocol 
+// db -- drivers
+//fill the html 
+//return the new html
+//page refresh 
+//gmail -- page -- data -- new html will returned and browser has to repaint or 
+//render it again 
+
+//ajax (2005 -- XMLHttpRequest (XHR))
+//parts of the page we can send data and only refresh data there 
+//picture -- 
+
+//database 
+
+//call a webservice -- database 
+
+//ui -- webservice (end point or url)
+//ajax call or xmlhttprequest call with a url 
+
+//service (server)
+  //can call db -- return result (array(json))--json 
+
+//array of javascript objects --> construct html from that 
+
+-----------------------------------------------------
+AJAX (Asynchronous Javascript And XML)
+JSON (Javascript Object Notation) 
+///////
+
+for data transfers -- format of the data was in xml 
+//xml -- data transform object format (protocol)
+//java -- c# -- python 
+object 
+object 
+//intermediate uniform 
+//xml language 
+<person>
+  <name>Peter</name>
+  <age>30</age>
+  <city>NewYork City</city>
+  <dateofbirth> </dateofbirth>
+</person> (69 characters)
+
+//parsers -- xml to c# object (language object)
+// c# object to xml 
+
+//Douglas Crockford (Yahoo)
+
+  {
+   name : 'peter',
+   age  : 30,
+   city : 'New York',
+   dateofbirth: '',
+   getAge: function(){
+
+   }
+  } (32 characters)
+
+//network (interwork) --> bandwith -- size -- faster --
+--more characters -- more bytes 
+//Json -- data transfer format object 
+"{
+   "name" : 'peter',
+   "age"  : 30,
+   "city" : 'New York',
+   "dateofbirth" : '',
+}"
+
+//json vs javascript 
+  //functions as values 
+  //no comments allowed 
+  //null and undefined -- ok 
+
+
+//parsers 
+//jSON
+
+java -- c# 
+  for sending json 
+  convert java object to json  (serialize)
+
+  c#-- get the json
+    --parse json to c# object  (deserilize)
+
+JSON 
+
+ javascript object to json
+  --serializing -- JSON.stringify(obj)--> json
+  --deserializing -- JSON.parse(json) --> obj
+
+  //json 
+
+ //ajax 6th chapter
+ //videos 
+
