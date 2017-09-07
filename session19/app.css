@@ -1,0 +1,30 @@
+.mainApp{
+  background-color: #ccc;
+  height: 500px;
+
+}
+
+ul li{
+  list-style: none;
+}
+
+.task{
+     background-color: #ffc;
+     display: block;
+     height: 150px;
+     margin: 15px;
+     padding: 20px;
+     width: 150px;
+     float: left;
+     box-shadow: 5px 5px 7px 4px #000;
+     border-radius: 4px;
+}
+
+.task:hover{
+  cursor: pointer;
+}
+
+.done{
+  text-decoration: line-through;
+}
+

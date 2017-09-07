@@ -1,0 +1,9 @@
+1)passby reference, passby copy(value)
+2)Closure 
+3)scope (local,closure, global);
+4)prototypal Inheritance
+5)timers 
+//Date time (mdn)
+
+//dom/jquery
+

@@ -1,0 +1,4 @@
+1) jquery element vs dom element 
+2) document.ready
+2) page load vs document.ready
+3) task App

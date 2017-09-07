@@ -1,0 +1,7 @@
+1) where is the best place to add javascript 
+2) dom
+3) access elements through dom
+4) ways of adding jquery or any library to html
+5) accessing the elements using jquery
+6) document ready
+
