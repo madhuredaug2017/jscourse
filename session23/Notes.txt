@@ -1,0 +1,15 @@
+
+Client  (Browser)
+Server --------
+Application Layer
+Database Layer 
+
+--------------------
+Organized, we have to write the code in multiple files (modules)
+
+Module -- Single Responsiblity-->()
+//purpose 
+
+1) we need to click handlers for the table header click for sorting
+  where should we add the logic (which file?)
+2) how to add click handler for the particular html
