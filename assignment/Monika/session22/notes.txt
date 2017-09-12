@@ -1,0 +1,13 @@
+
+    $.ajax({
+    	url : 'http://localhost:8100/customers/',
+    	method : 'get',
+    	datatype : 'json',
+    	timeout: 30000, //30 seconds 
+    	success : function(){
+
+    	},
+    	error : function(){
+
+    	}
+	});
