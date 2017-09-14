@@ -20,17 +20,50 @@ var displayCustomers = (function(){
 
 		ajaxService.get('customers',onCustomerDataSuccess,onCustomerDataFailure);
 		$('#customerRecords thead tr').on('click','th',onTableHederClick);
+        $('#searchInput').on('keyup change',onInputSearch);
+        // $('#searchInput').on('keyup',onInputSearch);
+        // $('#searchInput').on('change',onInputSearch);
+        // $('#searchInput').on('click',onInputSearch);
+        // $('#searchInput').on('keydown',onInputSearch);
+        $('.btnSearch').click(onInputSearch);
+
 	}
+
+    function onInputSearch(){
+        var searchText = $('#searchInput').val();
+        var rx = new RegExp(searchText,'i');//i -- case insensitive (lower or upper)
+
+        // var records = customerRecords.filter(function(record){
+        //     return rx.test(record.name);
+        // });
+         var records = customerRecords.filter(function(record){
+            for(var prop in record){
+                if(rx.test(record[prop])){
+                    return true;
+                }
+            }
+            return false;
+           
+        });
+        display(records);
+
+    }
 
     function onTableHederClick(){
     	//	var field =  $(this).attr('data-field');
     	var thData = $(this).data(); // 
     	var field = thData.field;
+        var  sortBy = 'ascending';
 
-    	var  sortBy = 'ascending';
-
+        if(thData.alreadySortedBy === 'ascending'){
+            sortBy = 'descending';
+        }
+    	
     	sortCustomerRecords(field,sortBy);
-    	display();
+
+    	display(customerRecords);
+
+        $(this).data('alreadySortedBy',sortBy);
 
     	//data attribute 
     	//data 
@@ -56,7 +89,7 @@ var displayCustomers = (function(){
     	  	}
     	  }
 
-    	  function descendingSort(){
+    	  function descendingSort(a,b){
     	  		if(a[field] > b[field]){
     	  			return -1;
 	    	  	}else if(a[field]< b[field]){
@@ -80,16 +113,36 @@ var displayCustomers = (function(){
     }
 
 	function onCustomerDataSuccess(records){
+        records = transformRecords(records);
 		customerRecords = records;
-     	display();
+     	display(customerRecords);
 	}
+    function transformRecords(records){
+        return records.map(function(record){
+            //a
+            //adam -- //Adam
+            //million records -- donot do transformations to ui 
+            //why ?
+            //it takes some time to process
+            //server side 
+            //javascript speed is slightly slower than java/
+            //it is transpiled (no compilation)
+            //io opertions (node is super transforms)
+            record.name = firstLetterCapitalize(record.name);
+            return record;
+        });
+    }
+    function firstLetterCapitalize(name){
+        name = name.length > 0? name[0].toUpperCase() + name.slice(1) : name;
+        return name;
+    }
 
 	function onCustomerDataFailure(){
 		console.log('error while fetching customers!!');
 
 	}
 
-	function display(){
+	function display(records){
 	   $('#customerRecords tbody').empty();
 	
 	   var row = '<tr>\
@@ -97,7 +150,7 @@ var displayCustomers = (function(){
 	            <td>#age</td>\
 	            <td>#city</td>\
 	          </tr>';  
-	   var html = customerRecords.map(function(record){
+	   var html = records.map(function(record){
 		 return row.replace('#name',record.name)
 		          .replace('#age',record.age)
 		          .replace('#city',record.city);

@@ -16,10 +16,19 @@
             </div>
             <div class="bg-color-sky-light">
                   <div class="content-md container" id="displayCustomers">
-                        <div class="row btnGroup">
-                              <button class="btn btn-primary" id="btnRefreshCustomers"> Refresh </button>
+                        <div class="row">
+                              <div class="col-xs-4 btnGroup">
+                              <button class="btn btn-primary " id="btnRefreshCustomers"> Refresh </button>
+                              </div>
+
+                              <div class="col-xs-6 input-group pull-right">
+                                <input type="text" id="searchInput" class="form-control" placeholder="Enter your search here"  >
+                                <span class="input-group-addon btnSearch" >Search</span>
+                              </div>
                         </div>
-                       
+                        
+
+
                         <div class="row">
                               <table id="customerRecords" class="table table-striped table-hover table-bordered">
                                     <thead>
