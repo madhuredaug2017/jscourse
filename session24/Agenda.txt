@@ -1,0 +1,123 @@
+1) html form (default behavior)--> pre ajax days how we used to send data 
+2) validations
+3) plugins and libraries
+4) Templates 
+-----------
+segway -- angular 
+--------
+
+2005 (Microsoft ) XMLHTTPRequest --Ajax 
+there is no ajax before 2005 
+we have been using internet, saving the data what user has typed 
+
+yahoomail 
+//signup 
+
+//get the data 
+//save the data 
+//server side html pre processing
+
+//how to send data using get 
+Query String: ?name=bob
+            &
+             age=40
+            &
+              city=portland
+            &
+            btnSave=
+
+            //url 
+
+ //get can be used for fetching(getting) the data 
+    but it can also be used to send (save/update) the data 
+
+ vs post 
+ 
+ //1) you can send limited data in queryString 
+ //can only send 255 chars 
+ //2) security, post is more secure than get 
+
+ // enterprise (organization) -- security is very important 
+ //hack the data 
+
+ajax -- network  
+http -- any network 
+network 
+(client) request -- headers and body 
+//get there is request body 
+//data is sent in the url
+(server) response -- headers and body
+
+-----------
+network request 
+-----------------
+url
+method : 'get','post','put','patch','delete','options'
+request -- headers and body
+response -- headers and body
+
+//url in the browser's address input bar // it automatically does a get request
+
+1kb - 1024 bytes 
+request -- headers 
+response --
+ headers -- sever (bytes), meta information (additonal information to help the browser)
+ body -- html(content)
+
+//GET
+
+query string == url will be modified 
+url : url?key1=value1&key2=value2
+//get (unsecure data) 
+
+//network router
+//network sniffing --> router I can observer (owner )
+//router password 
+//all routers common password 
+//
+//news hack (equifax)
+
+//post 
+//they cannot see the post data 
+//request body is sent over, but if it is https (encrypted and sent over)
+
+https vs http (http over ssl (secure socket layer))
+encryption --decipher text (garble the text)
+install ssl certificates 
+private key (unlock) and public key (lock)
+ssl --rsa
+it is not hacked yet  (very rarely)
+10/15 --ssl - more secure 
+//I write my own encryption (dont believe that guy)
+//complex -- open source 
+------------------------------------------------------------------
+comman get queryString 
+//referalls to our website 
+//
+
+//https://www.hrblock.com/tax-software/index.html?otppartnerid=7819&campaignid=af_mcm_7819_0002&PID=2210202&AID=12775017
+
+<a href="https://www.hrblock.com/tax-software/index.html?otppartnerid=7819&campaignid=af_mcm_7819_0002&PID=2210202&AID=12775017">
+</a>
+//retailmenot
+//referrrer
+
+//7819 -- retailmenot
+//100000 -- 1000
+
+//pre 2005/2008
+//form will do a whole page refresh 
+//form method action
+//form is sent to server --
+//processed by server and data is extracted --> send the response 
+//get data before ajax
+//refresh the page, pass the query string to refresh
+
+//server to preprocess and return a new html 
+// jsp 
+//asp.net 
+
+//preventDefault is used on a tags also
+
+
+

@@ -1,0 +1,29 @@
+Jquery Library 
+  Manipulate or Search dom 
+  power tool
+
+common things, ui developers will work in the ui world 
+  
+  data-grid with pagination
+  sorting the table
+  searching the table
+  drag and drop
+  date field (html5), calendar 
+
+
+jquery-ui (open source community)
+  --lets build a library for that by extending jquery 
+  --validation --> Jquery.validate(plugin to jquery)
+
+
+Drag and Drop
+------------
+click
+keyup,keydown
+
+MouseDown Event --ev
+Mousemove event --(ev.clientX, ev.clientY) (ev.pageX,  ev.pageY)
+mouseup event  //top,left 
+
+
+
