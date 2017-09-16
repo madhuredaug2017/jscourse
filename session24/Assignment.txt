@@ -1,0 +1,17 @@
+class26_1
+class26_2
+class26_3
+
+  session24 -- code 
+
+//CLASS 26 -- 2 
+ 1) Add phone u.s. validation and credit card validations using jquery validate library
+    add two input fileds 
+
+ 2) Optionally --> for later use (you can extend the library and write your own validation rules)
+   validate india phone number 
+
+Class 26 -3 
+1) Assignment -- Move your Actors Widgets using Jquery get (example did in the assignment), drag and sort (https://jqueryui.com/draggable/#sortable)
+and also do if time https://jqueryui.com/droppable/#photo-manager
+

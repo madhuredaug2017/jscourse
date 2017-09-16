@@ -77,10 +77,19 @@ function saveNewCustomer(ev){
     //2) make a post ajax request with the data
     makePost(newCustomerData);
 
-    ev.preventDefault();
-    ev.stoppropagation();
+   //default behavior of form  (button on a form )
+   //method (get) > data is sent as query string 
+   //method (post) >> data as post data 
+
+     ev.preventDefault(); //stopping the default behavior 
+     ev.stopPropagation(); //stop the event bubbling 
     //return false;
  
+}
+function cleanupData(){
+	$('#nameInput').val('');
+	$('#ageInput').val('');
+	$('#cityInput').val('');
 }
 function makePost(newCustomerData){
 	 var obj = {
@@ -90,6 +99,7 @@ function makePost(newCustomerData){
     	data : newCustomerData,
     	timeout: 30000, //30 seconds 
     	success : function(){
+    		cleanupData();
     		fetchCustomers();
             $('#addCustomerForm').hide();
             $('#displayCustomers').show();
