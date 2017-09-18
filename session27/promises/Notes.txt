@@ -1,0 +1,6 @@
+//Q.js (2010)
+
+//2015-2017 (Promises) -- new javascript 
+//2017 (Async await)
+
+//callback hell

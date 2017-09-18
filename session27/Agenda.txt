@@ -1,0 +1,94 @@
+1)cors and jsonp (cross domain requests)
+2)promises
+
+3)templates 
+
+
+//webservices and get data 
+//ajax -- data
+//get, post and validation example (any ui)
+
+
+//client, side html,js are in one server
+and webservices are in another server 
+
+//localhost:8100 
+consume webservices from google or facebook
+//
+
+inorder to consume webservices what do you need 
+1) endPoint or url (ajax url)
+2) http method (get,post, put, delete,patch,options)
+   security (post can also be used to fetch data too)
+3) dataType : 'json'
+
+//web browser (desktop web browsers)
+//if we are in one domain we cannot make request to another domain
+
+1)js on the same domain can make request to webservices on the same domain
+www.ourwebsite.com (js/html) --->  www.ourwebsite.com/customers
+2)js on the one domain cannot make requests to webservices on other domain
+www.ourwebsite.com (js/html)  xxx -- www.google.com/customers
+www.google.com/customers 
+(security measure desktop browsers)
+//by default disabled 
+//provisions 
+    cross domain requests 
+    a) JSONP
+    b) Enable CORS (Cross Origin Resource Sharing)
+
+    //needs some configuration on the server  side 
+    //front end developer  (cors or jsonp)
+
+    //how cors works 
+    //if browser determines you are making a cross domain request 
+    //webpage from one page and asking services from other domain 
+    //make a request to the end point of services
+    with a method of options
+
+    if its a cross domain 
+    1) request with method OPTIONS --> server you are allowed or not allowed (set some proper headers)
+
+    2) if the server says you are allowed, then browser will make the original request and every thing works 
+
+
+ -----------------------------------------------------------
+
+ JSONP 
+
+ajax (cross domain)
+1) browser allow loading straight javascript files from different domain
+
+//2)jsonp //configure on the server side 
+//json padding 
+//ajax call just like <script src="crossdomain?callback=someFunc"
+//jquery 
+//the request works fine 
+
+
+
+//handlebarjs (template)
+//q for promises
+//knockjs for databinding 
+//scrum agile 
+
+//Angular is a mix of different libraries 
+
+Email 
+//Angular 
+
+Udemy Videos
+ 1)Anthony Angularjs (weather)
+ 2)Dan Wahlin Angularjs (optional)
+ 3)Dan Wahlin Custom Directives (angular 1)
+ //dying technologies
+Plural Sight Scott Allen
+Books (Angular1, Angular2/4) // learn 
+React 
+
+
+
+
+
+
+

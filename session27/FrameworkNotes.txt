@@ -1,0 +1,61 @@
+//Framework vs Library
+
+Analogy of Building Homes 
+
+House 
+
+ 1) Buy a Existing (Pre-Buit) House 
+    
+    //SAP, Oracle Applications
+    //big companies 
+    //ERP (Enterprise Resource Planning)
+    //pre-built software 
+    //costly (extract money from big companies)
+    //very little to customize 
+
+ 2) Buy a lot and then construct house, brick by brick
+   	
+   	//constructing our software 
+   	//on our own (libaries(bricks)) helpers 
+   	//foundation
+
+   	//withstand //wind, hurricane 
+   	//bigger application 
+   	//hard to manage and it may collapse 
+   	// you can construct any way 
+
+ 3) Buy a lot and lay a foundation (pillars or frames(iron frames)) and construct house 
+   on top of that 
+
+   //solid foundation
+   //it can with stand better 2nd option
+
+   //frameworks (foundation)
+   //add framework
+   //work along the framework
+
+   //work with the framework you have to confine to the rules or boundaries
+   of the framework (pillars )
+   //code along the rules of the framework
+   //software easily extendable, maintanable 
+  
+   //SPA (Single Page Applications)
+
+   1) Angularjs (1/2) -- small to medium sized applications 
+      (20,000 to 40,000 lines of code) example 
+      large scale (40,000 to 200,000 lines of code and beyond)
+      //to make java/.net developers life easy 
+   2) (React + Redux) (small,medium,large)
+   3) Backbonejs 
+   4) Emberjs 
+   5) Vuejs
+   6) Bootstrap css frameworks (components)
+   //html container, 
+
+  
+  //libraries are helpers, donot dictate the way you write code 
+
+
+
+
+
