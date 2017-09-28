@@ -1,0 +1,39 @@
+Angular App
+1) I want field agents to login to the app  so that they can access the 
+  connect crm app 
+2) if they login with proper credentials, if they open the app in another tab also with in 1 mins they should be able to directly access the app with out logging in, if after 1 mins they should relogin
+  
+   Assumptions: As the login web service api is not ready, in the ui hard code the username and password to demo
+
+//Angular 
+
+1) can we use sublime or webstorm editor instead of plunker for angular
+   text editor 
+
+
+//bower deprecated soon
+//lot of 
+//bower 
+to manage client dependencies 
+
+//jquery 
+// <script 1)cdn link  2) download 3) bower 
+//
+//server side -- npm (node package manager for managing server side dependencies)
+
+npm install --> node_modules
+nodejs base tool
+npm install -g bower (global install)
+bower as a command line tool
+bower install -->bower_components
+------
+ls
+pwd
+npm
+git 
+
+---------
+ng-if vs ng-show
+
+ng-if --> the element is only added in the html if the condition is true 
+ng-show --> the element will always be there in the html but its css display property is change to visible('block') if the condition is true and is changed to 'none' (hidden) if condition is false

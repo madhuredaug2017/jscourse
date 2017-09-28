@@ -1,0 +1,222 @@
+Software Development Methodologies:
+ Software Development Life Cycle (SDLC)
+
+day to day how do you develop software
+process you will follow 
+
+different process (work flow) -- maximum productivity
+==maximum output from the team 
+//manage the software work
+
+1) Waterfall Process
+   very very rarely used: 
+    1) work and deadline (work comes from topdown)
+    2) manager or director -- requirements we have 
+      //work on it, you will not be asked to choose the work
+      //product to be used by users with in 1 month time 
+    droplets --> flow 
+     then next droplets come 
+
+2) Agile Process (change and adaptability)
+ --> adapting ang changing to the business needs 
+ --> weeks (months)
+
+how softwares are build in real life (experienced developers)
+
+--agile umbrella there are lot of different Methodologies 
+
+--Scrum Methodology is most widely used 
+ 
+ Scrum, Kanban, XP (Extreme Programming) , e.t.c. 
+
+ Scrum is a method of a agile process used for normal development
+ Kanban is used for production support team 
+
+ Scrum (team)
+ you will gather and decide what do you want to work, you are given more preference
+ (team will decide) 
+
+ xyz want to build a Product,
+ head of the company (director, v.p.,ceo, cfo,idea)
+ business side (people,marketing, v.p.)
+
+ one representive (one guy from the business side and make him the product owner)
+ //responsible for business side of things in the scrum team 
+
+ scrum methodology as the process for building this software product 
+
+ //team 
+
+ 1) Product Owner  (represent the business team)
+ 2) Scrum Master (assign scrum master ) -- one person 
+    Responsibilities: drives the project, facilitates the meetings 
+     //conducts meetings,
+     //if any body has any impediments(roadblocks or issue problems)-- he is responsible for resolving it  (manage the team)-- (Project Manager)
+ 3) Scrum Team Member
+    (7-10)
+    Developers (Team Lead)
+    Quality Assurance Testers (QA Lead)
+    Business Analysts(1 0r 2)
+
+dba shared resources in the company
+
+Team Size 
+  Developers: 3 App developers (c#), 1 UI, 1 Informatica, -- 5, 1 db
+  ----------
+   C#/Java/Python/Nodejs --> Web Services (Backend)
+   UI -- html,css,js (front end)
+   Informatica -- ETL(Extraction, Transformation and Loading)-- Data (process)
+
+  -------
+  --- 3 ui developers  (heavy work on the ui), 2(java) (UX )user experience team
+  css/layout/screenshot
+  			-- 2 offshore
+  1 BA gathering or finding detailed requirements
+  2 QA (testers ) manual or automation testers  
+      (requirment -- test cases)
+      test case -- test 
+  1 Scrum Master 
+
+  1 Product Owner  (10 members)
+
+onsite vs offsite (clients -- more responsibility)
+==more coding, learn the business of the organizaiton, to help the team/business
+//in making decisions
+
+guest -- Architects,and other stake holders
+
+-----------------------------------------------------------------
+product owner --> 
+
+1) User Stories (write):  (initial requirements)
+
+   Examples of User Story is What features they want 
+
+   web application --> gmail -->
+
+   1) I want a login page so that users can login to the webpage 
+   //not give full detailed requirement 
+
+   2) I want to have inbox so that users can check their email
+   3) I want to compose email so that users can send a new email
+
+    I want  .... so that ....
+
+
+ Backlog (place where you keep all you requriments)
+
+ ------ some user stories are written before even the team is gathered
+ ---- this will change 
+
+------------------------------------------------------------------------
+Sprint (some period of time) usually 2-3 weeks (1 or 4 or 5 weeks)
+
+Sep 25 2017 
+
+Dec 2018
+--------------------------------------------------------------------------
+3 week Sprint -- 
+
+Sprint 0 (Sep 25 -- Oct 13)
+Sprint 1 (Oct 16 -- Nov 3)
+Sprint 2 (Nov) ----
+Sprint 3 
+
+------------------------------------------------------------------------------
+scrum -- you try some thing, if it doesnot work you will change and adapt to the new thing 
+
+---------------------------------------------------------------------------
+
+Sprint will have some meetings/activities 
+//1 day of the Sprint (Sprint Planning day) 
+//all day meeting plan the things we can do in this sprint 
+//high priority user stories 
+
+//discuss about the user stories 
+//clarification on requirements if any requirements are not clear 
+//dicuss among the developers
+//write tasks for the user stories 
+//developer -- ownership of the task
+
+1) Setup Login Page so that users can login to the app
+   (images or html/css)
+
+   
+   complete the work in the user stories 
+   1) create a html page 
+   2) create css for the page
+   3) consume the  login webservice (ui task)
+   4) add validations on the input fields
+   5) if forget password? implement the forget password flow 
+   6) implmement the login webservices (java)
+
+   //test cases for the user stories 
+
+
+
+  1)definition of done for a user story 
+  //
+  //sprint is over, we say the code is production ready 
+
+  //
+  //2nd day to the last but one day of the sprint 
+
+  //you will be developing 
+
+  1 meeting Daily Standup
+1) 09:00 (Scrum)
+ 
+  chance 
+  1) What i have worked yesterday
+  2) What I will be working on today
+  3) Are there any impediment or roadblocks
+
+---------
+  3 weeks per sprint (30 minutes)
+
+  weekly -- scrum gromming meetings (overview of what are the things coming in the next sprint)
+
+
+  //fibonacii series 
+
+  //hours 
+
+  esitmated with story points in fibonacci
+  (1,2,3,5,8,13,21...) 
+  //break down in tomultiple  
+  
+
+  //5 
+
+  relative (approximate)
+
+  //60  
+   (under estimate and over deliver) -- good 
+   //over estimate and under deliver -- bad
+  
+   //45
+   //40 
+   //80
+   //70
+
+//last day of the sprint
+sprint retrospective meeting (gather)
+  --analysis 
+  --good things 
+  --opportunies(bad things)-- improve on the next sprint 
+sprint demo 
+  demo to the stake holders(demo the application developed)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,186 @@
+Connect CRM Project
+
+Angular 
+
+Company
+--------
+Organization: Customer Relationship Management (CRM)
+
+Software CRM
+------------------------------------------------------
+Insurance Company -- Home Insurance,  (Healthcare, Retail)
+
+1) increase sales --> 
+   compaigning (compaign adversitement)
+   a) customer retainment -- main customer 
+   b) attracting new customers  
+
+--Customer Service ----------
+
+Insurance XYZ ---- customers 
+
+vendors/ partners -- get list of customers who might be interested in your 
+product 
+
+home (registering) -- usps -->  some vendors will get my address
+
+they will sell these to big insurance companies as leads 
+
+Leads -- source like a customer -- he did some thing so that he will be a 
+lead to a company
+
+Lead -- a new some body 
+Prospect (target) -- if you think the lead, is a better fit for a product 
+he will be prospect (a future customer)
+  -- postal mail (letters)
+  -- calling you 
+Customer -- if the prospect signs up/ buys your product he will be customer
+----------------------------------------------------------------------------------
+
+Leads from different vendors 
+  in different format (from different database)
+  -------
+
+-------------------------------
+Feed all these leads every day from different db/sources in to a centralized database by running a ETL process (eg: informatica, teradata, ssis)
+
+
+-----------------------------------
+CRM tool so that the customer service agents (district manager)
+-- can access these leads from your web application
+see their detailed information
+and they can follow up 
+and write notes in the web application
+//they can make the lead a prospect 
+and they can check existing customers and send them different campaigns
+and make sure they are retained if they are existing customers 
+
+Kansas city (area /city/ region/zipcodes)
+--region leads 
+Newyork city
+atlanta
+
+
+-----------------------------------------------------------
+source ---
+
+application like a suitecrm 
+with a bootstrap template 
+exiting css (boostrap template)
+and will be doing a angular application
+(3-4 modules )
+assignments
+
+------------------------------------------------------------
+college
+(stop)  -- 2 or 3 modules
+--------------------------------------------
+React journey
+
+------------------------------------------------------
+html/css - awesome 
+javascript -- 
+  jquery
+    angular -- very slow progress (transparent)
+------------------------------------------------------------------
+good days and bad days
+make more good days -- productive 
+
+----------- slowly ---------------------
+45 days (august 06)
+----------------------------------------
+Softwares -- Client --- Bofa
+Bofa -- IT Branch -- Developers
+Infosys (IT) -- Bofa 
+Application (Bofa)--------------------
+-----------------------------------------
+CRM -- crm usage in bofa (credit card branch)
+
+lead 
+prospect (adventisement campaign) -- mail to accept credit card
+accepted -- customer
+
+--------------------------------------------------
+CRM Software Tool(application)
+-----------------------------------------------------
+application from scratch using frontend (angularjs/react)
+backend -- nodejs(java/dotnet)
+etl ----- data loading (scrubbing)
+database (oracle )
+--------------------------------------------
+buy a exiting software 
+
+Kana, SAP CRM, Oracle CRM ()
+--------------------------------------------------
+CRM (intranet application) (with in the organization)
+
+--not be open to public
+--open to organization employees 
+ 
+ authentication and authorization
+
+authenticate -- validate user in the organization (credentials)
+--employee 
+--
+accounting
+---
+--authorization -- role (customer service  in kansas) 
+-- authorized to see users in kansas city area
+
+--vice president 
+--authorized to see any areas lead 
+---------------------------------------
+Scrum (Team) -- Methodology
+3 to 4 
+----------------------------------------
+Scrum (Agile board)
+---
+teach scrum along the way
+----scrum way 
+-----------------------------------
+scope (custom directives)
+-----------------------------------------
+
+1) Anthony (udemy)
+2) Dan Wahlin (Optional)
+3) Dan Wahlin Custom Directives (course)
+  scope 
+
+Angular book angular 1 680 
+angular 2 
+react 
+----------------------------------------------
+paid by me -- shared
+checking -- pdf -- book -- barcode -- email address
+-------------------------------------------------
+What ever i learn -- I will share 
+
+---------------
+Scrum methodology ()
+==== board ------------
+white board 
+sticky notes ---
+user stories -- ownership (sprint)
+tasks for that user stories as a sticky notes 
+---------------------
+Electronic (agile board) software board
+---software vendors 
+
+jira (software vendor for agile board)
+== managing project (managing tickets)
+----------------------------------------------
+
+Atlassian -- software company
+ (IT)
+  1) jira (software project management)
+      -- different methologies 
+       Agile (scrum,kanban), Waterfall,
+  2) confluence (wiki page)-- documentation
+  3) 
+
+
+
+
+
+
+

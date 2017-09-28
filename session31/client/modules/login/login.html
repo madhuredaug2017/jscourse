@@ -1,0 +1,36 @@
+<div ng-controller="LoginController"  >
+<form ng-if="!isLoggedIn" ng-submit="doLogin($event)" class="form-horizontal">
+  <fieldset>
+    <legend>Login Form</legend>
+    <!-- username -->
+    <div class="form-group">
+      <label for="usernameInput" class="col-lg-2 control-label">Username</label>
+      <div class="col-lg-10">
+        <input ng-model="login.username" type="text" class="form-control" id="usernameInput" placeholder="Username">
+      </div>
+    </div>
+    
+    <!-- password -->
+    <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+      <div class="col-lg-10">
+        <input ng-model="login.password"  type="password" class="form-control" id="inputPassword" placeholder="Password">
+       
+      </div>
+    </div>
+
+   
+   <!-- Login Btn -->
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+
+  </fieldset>
+</form>
+
+<div ng-if="isLoggedIn">
+You are Logged In
+</div>
+</div>

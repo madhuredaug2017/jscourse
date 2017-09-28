@@ -1,0 +1,24 @@
+Life Insurance Company of India (LIC)
+    -- life insurance premiums 
+    -- government
+
+   Agents 
+
+   enter the data 
+   //forms (local headoffice)
+   //enter the data in the centralized app (centralized db)
+   //excel sheet and send it to district head quarters
+   //entering the data in a vendor app
+
+ //database so that ceo or senior leadership can analyze the data
+
+  data in different formats  -- common db (single db)
+
+ Informatica (ETL, microsoft SSIS)--> Tools
+ 
+ 1)Extract the data from different sources
+ 2)Transform the data as per the centralized database structure/schema
+    firstName 
+    lastName
+ 3)Load the data in to the database by validating database rules/constraints
+   integrity of the data
