@@ -1,0 +1,31 @@
+
+Agile Methodology
+
+What is Agile?
+The ability to create and respond to change in order to succeed in an uncertain and turbulent environment. (https://www.agilealliance.org/agile101/)
+
+Scrum, like all of the agile processes, is both iterative and incremental. (https://www.mountaingoatsoftware.com/blog/agile-needs-to-be-both-iterative-and-incremental)
+
+Scrum comes from rugby 
+
+1)Backlog items are “formless.” An item can be anything is very open and elegant in its lack of constraints. At the same time, the very formless nature of a backlog item often produces anxiety when a person hears that it can be anything.
+2)Sprint Planning sets “driving directions.”
+3) Sprint Demo is “product that is ready to ship.”
+4) Retrospection as “learning from history.”
+
+
+Scrum Roles
+
+1)Product Owner is “the driver.”
+2)ScrumMaster is “the doctor.”
+
+//Real time project 
+//jira (software ) -- agile scrum board 
+//explain real time project 
+//monday (angular project)
+
+
+and The scrum Team (developers (lead, dev), business analysts, Quality Assurance testers)
+
+go read https://www.atlassian.com/agile/scrum
+  
