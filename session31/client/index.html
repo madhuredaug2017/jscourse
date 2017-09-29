@@ -7,14 +7,19 @@
 
 	<link href="bower_components/components-font-awesome/css/font-awesome.css" rel="stylesheet" />
 
-	<link href="css/slate.css" rel="stylesheet" />
+	<link href="css/core.css" rel="stylesheet" />
+	<link href="css/icons.css" rel="stylesheet" />
+	<link href="css/components.css" rel="stylesheet" />
+	<link href="css/pages.css" rel="stylesheet" />
+	<link href="css/menu.css" rel="stylesheet" />
+	<link href="css/responsive.css" rel="stylesheet" />
+
 	<link href="css/app.css" rel="stylesheet" />
 
 </head>
 <body>
 
-<div ng-app="loginApp" class="loginContainer">
-
+<div ng-app="loginApp" id="loginApp" class="loginContainer">
  <div class="container well ">
  	<ng-include src="'modules/login/login.html'"> </ng-include>
  </div>
@@ -22,7 +27,9 @@
 
 </div>
 
-<div class="mainApp">
+<div id="ConnectApp"  class="mainApp hidden">
+ <div class="topbar" ng-include src="'modules/layout/top/topBar.html'"  >  </div>
+
 
 </div>
 
@@ -33,6 +40,9 @@
 
  <script type="text/javascript" src="modules/login/loginApp.js" ></script>
 
+
+  <script type="text/javascript" src="connectApp.js" ></script>
+  <script type="text/javascript" src="modules/layout/top/top.controller.js" ></script>
 
 </body>
 </html>
