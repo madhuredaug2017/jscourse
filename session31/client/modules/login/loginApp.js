@@ -37,6 +37,8 @@ function LoginController($scope){
 		$scope.isLoggedIn = false;
 	}else{
 		$scope.isLoggedIn = true;
+		startMainApp();
+		return;
 	}
 	
 	$scope.login = {};
@@ -50,10 +52,28 @@ function LoginController($scope){
 			$scope.isLoggedIn = true;
 			localStorage.setItem('connectLoggedIn',true);
 			localStorage.setItem('loginTime',loginTime);
+			startMainApp();
 		}
 		e.preventDefault();
 	}
 	//milliseconds jan 1  1970, 00:00:00 -- 0
 	//epoch
+
+}
+
+function startMainApp(){
+	var appEl = document.getElementById('ConnectApp');
+	var logEl = document.getElementById('loginApp');
+
+	//dom way of adding and removing class
+	appEl.classList.remove('hidden');
+	logEl.classList.add('hidden');
+	//angular contains jquery lite 
+	//lighter version of jquery
+
+	//programatically you want to attach an angular app to a html element 
+	angular.bootstrap(appEl,['connect']);
+
+	//angular.bootstrap
 
 }
