@@ -1,0 +1,6 @@
+{
+    "picture": "api/assets/users/john.jpg",
+    "firstName": "John",
+    "lastName" : "William",
+    "role": "Field User"
+}

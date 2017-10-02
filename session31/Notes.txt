@@ -1,0 +1,17 @@
+writing code simpler is not simple 
+ 
+ 1) KISS(Keep it stupily simple)
+
+
+$http //which component
+1) module
+2) controller
+3) directive
+4) filters
+5) service or factory (data api calls) (model,data)
+
+Model View Controller
+
+Model -- data part 
+View -- html
+Controller -- logic (business logic)
