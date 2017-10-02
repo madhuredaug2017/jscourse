@@ -1,10 +1,17 @@
 <ul class="nav navbar-nav navbar-right pull-right">
     
-	<li class="hidden-xs">
-		<a href="#" data-target="#"
+	<li class="dropdown hidden-xs" ng-class="{'open': IsNotificationOpen}" >
+		<a ng-click="openNotification()" 
+			ng-blur="closeNotification()"
+		     href="#" data-target="#"
 			class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="false">
 			<i class="md md-notifications"></i> <span class="badge badge-xs badge-danger">3</span>
 		</a>
+
+		<ul ng-if="IsNotificationOpen" class="dropdown-menu dropdown-menu-lg">
+			<!-- dynamic notifications will come here -->
+            <ng-include src="'modules/layout/top/includes/notification.html'"> </ng-include>
+		</ul>
 	</li>
 
 	<li>

@@ -69,7 +69,135 @@ function onServerBind(){
   app.get('/tasks', getTasks);
   app.post('/message',addMessage);
   app.post('/task',addTask);
+
+  app.get('/api/alerts', getAlerts);
+  app.get('/api/user', getUser);
+
+  app.get('/api/leads', getLeads);
+  app.get('/api/contact/:id',getContact);
+  app.post('/api/contact/:id',saveContact);
+  app.post('/api/contact',addNewContact);
+
 }
+
+
+function addNewContact(req,res){
+  'use strict';
+
+  var updated = req.body;
+  var contacts = getContacts();
+  var last = contacts.length;
+
+  if(updated){
+    contacts[last] = updated;
+
+    contacts = JSON.stringify(contacts,null,2);
+    writeJsonFileSync(pa,contacts);
+    res.json({sucess:'Contact added successfully'});
+    res.end();
+
+  }else{
+    res.json({message:'sorry data sent is not good!!'});
+    res.end();
+  }
+
+}
+
+function saveContact(req,res){
+  'use strict';
+    var id = req.params.id;
+  var updated = req.body;
+  if(updated){
+    var contacts = getContacts();
+
+    var contact = _.find(contacts,function(item){
+      return item.id.toString() === id.toString();
+    });
+
+    contacts[id] = updated;
+    var pa = path.normalize(__dirname+'/data/contacts.json');
+
+
+    contacts = JSON.stringify(contacts,null,2);
+    writeJsonFileSync(pa,contacts);
+    res.json({sucess:'Message saved successfully'});
+    res.end();
+
+  }else{
+    res.json({message:'sorry data sent is not good!!'});
+    res.end();
+  }
+
+}
+
+
+
+function getContact(req,res){
+  var id = req.params.id;
+  var contacts =  getContacts();
+  var contact = _.find(contacts,function(item){
+    return item.id.toString() === id.toString();
+  });
+
+  if(contact){
+    res.json(contact);
+    return;
+  }
+
+  res.json({message: 'No Contact Found'});
+}
+
+function getAlerts(req,res){
+  'use strict';
+  var pa = path.normalize(__dirname+'/data/alerts.json');
+  var alerts =  readJsonFileSync(pa);
+  res.json(alerts);
+}
+
+function getUser(req,res){
+  'use strict';
+  var pa = path.normalize(__dirname+'/data/user.json');
+  var user =  readJsonFileSync(pa);
+  res.json(user);
+}
+function getLeads(req,res){
+  'use strict';
+  var contacts =  getContacts();
+  var leads = _.filter(contacts,function(item){
+      return item.isLead;
+  });
+  res.json(leads);
+
+}
+
+function getContacts(){
+  var pa = path.normalize(__dirname+'/data/contacts.json');
+  var contacts =  readJsonFileSync(pa);
+  return contacts;
+}
+function addTask(req,res) {
+  'use strict';
+
+  var task = req.body;
+  if(task){
+    var pa = path.normalize(__dirname+'/data/tasks.json');
+    var all =  readJsonFileSync(pa);
+    var tasks = all.tasks;
+    tasks.push(task);
+    var data = {
+      tasks: tasks
+    };
+    data = JSON.stringify(data,null,2);
+    writeJsonFileSync(pa,data);
+    res.json({sucess:'Task saved successfully'});
+    res.end();
+
+  }else{
+    res.json({message:'sorry data sent is not good!!'});
+    res.end();
+  }
+}
+
 
 function connectDB(){
 

@@ -1,0 +1,21 @@
+[{
+        "type": "message",
+        "textType": "info",
+        "heading": "New user registered",
+        "message": "You have #count unread messages",
+        "count": "10"
+    },
+    {
+        "type": "updates",
+        "textType": "danger",
+        "heading": "Updates",
+        "message": "You have #count unread messages",
+        "count": "2"
+    },
+    {
+        "type": "settings",
+        "textType": "primary",
+        "heading": "New settings",
+        "message": "There are new settings available"
+    }
+]
