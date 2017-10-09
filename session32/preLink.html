@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title></title>
+</head>
+<body>
+
+ <parent> </parent>
+
+
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.20/angular.min.js"></script>
+<script >
+ var app = angular.module('app',[]);
+ //bob -- john
+ app.directive('parent',function(){
+ 	return {
+ 		restrict: 'E',
+ 		template:'<div> <child> </child> </div>',
+ 		replace: true,
+ 		link : {
+ 			pre: function(scope,elem,attr,ctrl){
+ 				scope.parentName = 'bob';
+ 			}
+ 		}
+ 		// link : function(scope){
+ 		// 	scope.parentName = 'bob';
+ 		// }
+    };
+
+ });
+
+ app.directive('child',function(){
+ 	return {
+ 		restrict: 'E',
+ 		template: ' <p>I am {{message}} </p>',
+ 		replace: true,
+ 		link : function(scope){
+ 			scope.childName = 'John';
+ 			scope.message = scope.childName + '  and my father is '+ scope.parentName;
+ 		}
+    };
+
+ });
+
+//link (post) function is run in a specific order inside nested directives 
+//child will run then parent will run -- (bottom to top)
+//where as prelink , compiler,controller
+//top to bottom == parent , child 
+
+//compiler, controller, prelink and postlink
+
+</script>
+</body>
+</html>

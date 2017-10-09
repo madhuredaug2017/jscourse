@@ -1,0 +1,25 @@
+
+<li class="text-center notifi-title">Notification</li>
+
+<li class="list-group">
+ 
+
+ <a href="#" ng-repeat="note in notifications track by $index"  class="list-group-item">
+     <div class="media">
+     		<div  class="media-left">
+     		   <em class="fa fa-2x" 
+               ng-class="{'{{note.iconType}}': note.iconType ,
+                    '{{note.messageType}}' : note.messageType }"> </em>
+     		</div>
+
+     		<div class="media-body clearfix">
+
+     		    <div class="media-heading">{{note.heading}}</div>
+                <p class="m-0">
+                  <small>{{note.message}}</small>
+                </p>
+     		</div>
+     </div>
+ </a>	
+
+</li>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title></title>
+</head>
+<body>
+
+<div ng-controller="ListController">
+ <person name="john" > </person> <!-- E -- Element -->
+ <person name="bob"> </person>
+<div>
+<!--
+ <div person=""> </div> <!-- A --Attribute 
+ <!-- <person> 
+ <div class="person"> </div>
+-->
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.20/angular.min.js"></script>
+<script >
+ var app = angular.module('app',[]);
+app.controller('ListController',ListController);
+
+function ListController($scope){
+	$scope.name = ' Students ';
+}
+ app.directive('person',function(){
+ 	return {
+ 		restrict: 'E',
+ 		replace: true,
+ 		template: '<div>Welcome  this is directive</div>',
+ 		compile: function(tElement,tAttributes){
+ 			console.log('compiler running ');
+ 			//link
+ 		  return{
+ 		  	pre: function(scope,elem,attr,ctrl){
+ 		  		console.log('pre link running ');
+ 		  	},
+ 		  	post: function(scope,elem,attr,ctrl){
+ 		  		console.log('post link running ');
+ 		  	}
+
+ 		  };
+		},
+ 		controller: function($scope){
+ 			console.log('controller running ');
+ 		}
+
+ 	};
+
+ });
+</script>
+</body>
+</html>
