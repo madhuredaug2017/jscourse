@@ -15,3 +15,14 @@ Model View Controller
 Model -- data part 
 View -- html
 Controller -- logic (business logic)
+
+-------Router---------
+Limitation of Angular inbuilt router 
+1) ng-view per application
+
+View inside view (nested views or subviews)
+--routing for such things
+Angular inbuilt router doesnot support
+--------------
+Third party libraries
+UI-Router is famous for nested view routing

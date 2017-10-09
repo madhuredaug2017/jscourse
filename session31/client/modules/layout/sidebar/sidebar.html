@@ -1,0 +1,15 @@
+<div class="sidebar-inner">
+
+ <div id="sidebar-menu" ng-controller="SidebarController" >
+ <ul>
+  <!-- angular never use === -->
+    <li ng-click="selectedMenu($index,menuItem)" ng-repeat="menuItem in menuItems track by $index"
+        ng-class="{'active': $index == activeIndex}">
+       <a ng-class="{'active': $index == activeIndex}">{{menuItem.name}} </a>
+    </li>
+</ul>
+
+
+ </div>
+
+</div>

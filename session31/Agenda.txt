@@ -1,0 +1,2 @@
+1) sidebar 
+2) and then hook up ui routers

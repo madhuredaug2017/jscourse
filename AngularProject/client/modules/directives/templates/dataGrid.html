@@ -1,0 +1,36 @@
+<div>
+
+ <div class="row">
+    <div class="col-xs-6">
+       <select> </select>
+    </div>
+
+    <div class="col-xs-6">
+      <label>Search: <input /> </label>
+    </div>
+ </div>
+
+ <div class="row">
+   <table class="table table-striped table-bordered dataGrid">
+     <thead>
+        <tr>
+           <th>Name</th>
+           <th>Age</th>
+           <th>City</th>
+        </tr>
+     </thead>
+     <tbody>
+      
+       <tr ng-repeat="item in grid.list track by $index">
+       		<td> {{item.name}} </td>
+       		<td> {{item.age}} </td>
+       		<td> {{item.city}} </td>
+       </tr>
+
+     </tbody>
+   </table>
+ </div>
+
+
+
+</div>

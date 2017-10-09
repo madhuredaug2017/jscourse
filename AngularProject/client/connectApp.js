@@ -21,6 +21,16 @@ function routeConfig($stateProvider){
   	templateUrl: 'modules/dashboard/dashboard.html',
   	controller: 'DashboardController'
   })
+  .state('dashboard.leads',{
+    url : '/newleads/',
+    templateUrl: 'modules/dashboard/leads/newLeads.html',
+    controller: 'NewLeadsController'
+  })
+  .state('dashboard.prospects',{
+    url : '/newProspects/',
+    templateUrl: 'modules/dashboard/prospects/newProspects.html',
+    controller: 'NewProspectsController'
+  })
   .state('leads',{
   	url: '/leads',
   	templateUrl: 'modules/leads/leads.html',
