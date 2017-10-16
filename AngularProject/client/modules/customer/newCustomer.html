@@ -1,0 +1,114 @@
+<form name="addCustomerForm" novalidate class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Add New Customer</legend>
+ 
+ <!-- 
+ <b>
+ Name invalid : {{addCustomerForm.nameInput.$invalid}}
+ <br />
+
+ Name valid : {{addCustomerForm.nameInput.$valid}}
+ <br />
+  Name pristine : {{addCustomerForm.nameInput.$pristine}}
+   <br />
+   Name dirty : {{addCustomerForm.nameInput.$dirty}}
+
+ </b> {{newCustomer}} -->
+
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nameInput">Name</label>  
+  <div class="col-md-4">
+  <input id="nameInput"
+  		 ng-model="newCustomer.name"
+  		 ng-minlength="3"
+  		 ng-maxlength="10"
+  		 required
+         name="nameInput" type="text" placeholder="Enter customer Name Here" class="form-control input-md">
+
+         <div class="alert alert-danger" 
+         		ng-show="addCustomerForm.nameInput.$invalid && addCustomerForm.nameInput.$dirty"
+               >
+             <div ng-show="addCustomerForm.nameInput.$error.required"> Name is required</div>
+             <div ng-show="addCustomerForm.nameInput.$error.minlength"> Name should be minimum of three characters </div>
+             <div ng-show="addCustomerForm.nameInput.$error.maxlength"> Name should be less than  10 characters </div>
+
+
+
+         </div>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ageInput">Age</label>  
+  <div class="col-md-4">
+  <input id="ageInput" 
+  		ng-model="newCustomer.age"
+  		 min="18"
+  		 max="70" required
+  		 name="ageInput" type="number" placeholder="Enter customer Age here" class="form-control input-md">
+
+  		 <div class="alert alert-danger" 
+         		ng-show="addCustomerForm.ageInput.$invalid && addCustomerForm.ageInput.$dirty"
+               >
+             <div ng-show="addCustomerForm.ageInput.$error.min"> Age should be greater than 18</div>
+
+               <div ng-show="addCustomerForm.ageInput.$error.max"> Age should be less than 70</div>
+           
+
+         </div>
+
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="emailInput">Email</label>  
+  <div class="col-md-4">
+  <input id="emailInput"
+  		ng-model="newCustomer.email"
+  		ng-pattern="/\S+@\S+\.\S+/"
+  		required
+  		 name="emailInput" type="text" placeholder="Enter customer Email Here" class="form-control input-md">
+    
+    	 <div class="alert alert-danger" 
+         		ng-show="addCustomerForm.emailInput.$invalid && addCustomerForm.emailInput.$dirty"
+               >
+             <div ng-show="addCustomerForm.emailInput.$error.pattern"> Email should contain @ and '.' domain name</div>
+           
+
+         </div>
+
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="notesArea">Notes</label>
+  <div class="col-md-4">                     
+    <textarea   class="form-control" id="notesArea"
+    	ng-model="newCustomer.notes"
+    	required 
+        name="notesArea"></textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="saveBtn"></label>
+  <div class="col-md-4">
+    <button id="saveBtn" 
+    		ng-click="save($event,addCustomerForm.$valid,addCustomerForm.$dirty)"
+       name="saveBtn" class="btn btn-success">Save</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
