@@ -1,6 +1,9 @@
 angular.module('connect')
        .controller('DashboardController',DashboardController);
 
+	   
+
+ DashboardController.$inject = ['$scope','$state'];
 
 function DashboardController($scope,$state){
 	$scope.message = 'This is awesome dashboard';
