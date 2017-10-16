@@ -169,10 +169,23 @@ function getLeads(req,res){
   var leads = _.filter(contacts,function(item){
       return item.isLead;
   });
-  var start = (pageNo - 1) + count;
+  var start = (pageNo - 1) * count;
   var end = start + count;
+  var data = {
+    count: leads.length
+
+  };
+
+  end = end > data.count ? data.count: end;
+  if(start > data.count){
+    data.leads = [];
+    res.json(data);
+    return;
+  }
+
   leads = leads.slice(start,end);
-  res.json(leads);
+  data.leads = leads;
+  res.json(data);
 
 }
 

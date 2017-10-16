@@ -3,6 +3,8 @@
     <h3 class="panel-title">New Leads</h3>
   </div>
   <div class="panel-body">
-      <grid list="leads"> </grid>
+      <grid list="leads" count="totalLeads" page-sizes="pageSizes" 
+            page-size="pageSize" page-no="pageNo" goto="getLeads(pageNo,size)" >
+       </grid>
   </div>
 </div>

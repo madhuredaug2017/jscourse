@@ -1,0 +1,23 @@
+
+Minification and Bundling
+
+
+	   //minify
+	   //build tasks 
+	   //grunt or gulp 
+	   //2017 --newer world webpack npm scripts
+	   //more files 
+	   //it takes more time to download 
+	   //one after another ,process
+
+	   //minify and  bundle(compression) it in to one single file 
+
+	   angular.module('connect')
+       .controller('DashboardController',['$scope','$state',function($scope,$state){
+
+       }]);
+
+       angular.module('connect')
+       .controller('DashboardController',['$scope','$state',DashboardController]);
+
+       
