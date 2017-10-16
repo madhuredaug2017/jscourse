@@ -35,6 +35,11 @@ function routeConfig($stateProvider){
   	url: '/leads',
   	templateUrl: 'modules/leads/leads.html',
   	controller: 'LeadsController'
+  })
+  .state('addcustomer',{
+    url :'/addNewCustomer',
+    templateUrl: 'modules/customer/newCustomer.html',
+    controller: 'NewCustomerController'
   });
 
 }

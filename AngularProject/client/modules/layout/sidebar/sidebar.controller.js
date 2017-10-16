@@ -38,7 +38,9 @@ function getMenuItems(){
 		{name: 'Dashboard', path: 'dashboard', authorizedUsers:'all'},
 		{name: 'Leads', path: 'leads', authorizedUsers:'fieldUsers,admin'},
 		{name: 'Prospects', path: 'prospects', authorizedUsers:'fieldUsers,admin'},
-		{name: 'Customers', path: 'customers', authorizedUsers:'fieldUsers,admin'}
+    {name: 'Customers', path: 'customers', authorizedUsers:'fieldUsers,admin'},
+		{name: 'Add New Customer', path: 'addcustomer', authorizedUsers:'fieldUsers,admin'}
+
 	];
 
 	return menuItems;
